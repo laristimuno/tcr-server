@@ -15,7 +15,7 @@ conectarDB();
 
 // Habiliotar cors
 app.use(cors({
-    origin: 'https://tcrbuilders.com/',
+    origin: 'https://tcrbuilders.com',
     credentials: true
 }));
 
