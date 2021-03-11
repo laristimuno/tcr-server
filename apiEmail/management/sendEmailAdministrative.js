@@ -32,7 +32,7 @@ const sendEmailAdministrative = async (infoUser) => {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: '"TCR Builders" <noreply@tcrbuilders.com>',
-    to: 'laristimuno@gmail.com, ciaraba01@gmail.com', // list of receivers
+    to: 'laristimuno@gmail.com, samuel@tcrbuilders.com', // list of receivers
     subject: `New lead was registered - ${name} ${lastName}`,
     //text: "Hello world?", // plain text body
     html: `<div width='100%' style="font-family:'Montserrat', sans-serif;padding:30px">

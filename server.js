@@ -10,17 +10,14 @@ const app = express();
 conectarDB();
 
 // Habiliotar cors
+/* app.use(cors()); */
+
+
+// Habiliotar cors
 app.use(cors({
-    origin: 'http://new.tcrbuilders.com',
+    origin: 'https://tcrbuilders.com/',
     credentials: true
 }));
-
-
-/* // Habiliotar cors
-app.use(cors({
-    origin: 'http://new.tcrbuilders.com/',
-    credentials: true
-})); */
 
 // Cookies
 app.use(cookieParser());
