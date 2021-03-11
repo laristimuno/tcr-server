@@ -10,14 +10,14 @@ const app = express();
 conectarDB();
 
 // Habiliotar cors
-/* app.use(cors()); */
+app.use(cors());
 
 
 // Habiliotar cors
-app.use(cors({
+/* app.use(cors({
     origin: process.env.TCRURL,
     credentials: true
-}));
+})); */
 
 // Cookies
 app.use(cookieParser());

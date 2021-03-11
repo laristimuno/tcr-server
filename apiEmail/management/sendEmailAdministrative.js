@@ -32,7 +32,7 @@ const sendEmailAdministrative = async (infoUser) => {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: '"TCR Builders" <noreply@tcrbuilders.com>',
-    to: 'laristimuno@gmail.com, samuel@tcrbuilders.com', // list of receivers
+    to: 'laristimuno@gmail.com, samuel@tcrbuilders.com', // list of receivers samuel@tcrbuilders.com
     subject: `New lead was registered - ${name} ${lastName}`,
     //text: "Hello world?", // plain text body
     html: `<div width='100%' style="font-family:'Montserrat', sans-serif;padding:30px">
@@ -82,7 +82,9 @@ const sendEmailAdministrative = async (infoUser) => {
   // send mail with defined transport object
   transporter.sendMail(info, (error, info) => {
     if (error) {
-      return console.log(error);
+      console.log(error);
+      console.log("se ejecuta este codigo")
+      return;
     }
     console.log('Message sent: %s', info.messageId);
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
