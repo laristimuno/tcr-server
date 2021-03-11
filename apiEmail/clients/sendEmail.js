@@ -40,7 +40,7 @@ const sendEmail = async (infoUser) => {
       Your request has already been received by our team. In the next hour one of our representatives will be calling you to talk about your project. Remember that you can also see the status of your project as well as make appointments from your account, by entering the following link:
     </p>
     <div style="margin-bottom:40px">
-      <a href="http://new.tcrbuilders.com/client-dashboard" style="display:block;text-align:center;background-color:#ea6326;padding:10px;max-width:150px;margin:auto;color:#fff;text-transform:uppercase;text-decoration:none;border-radius: 10px;">My Account</a>
+      <a href="${process.env.TCRURL}/client-dashboard" style="display:block;text-align:center;background-color:#ea6326;padding:10px;max-width:150px;margin:auto;color:#fff;text-transform:uppercase;text-decoration:none;border-radius: 10px;">My Account</a>
     </div>
   </div>
   <div>
